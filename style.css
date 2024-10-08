@@ -1,9 +1,42 @@
-.arxiv_list{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.web_list{
     list-style-type:disc;
     padding-left: 1rem;
     margin-left: 1rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: large;
+    font-family: 'Roboto';
+    font-size: 1.75rem;
 }
 
+.skill{
+    -webkit-column-count: 3; -webkit-column-gap:20px;
+    -moz-column-count:3; -moz-column-gap:20px;
+    -o-column-count: 3; -o-column-gap:20px;
+    column-count: 3; column-gap:20px;
+    list-style-position: inside;
+}
+
+.heading{
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.con *{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.headingcap{
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+}
+
+.paper_list{
+    list-style-type:disc;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+}
