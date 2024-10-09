@@ -1,39 +1,21 @@
-window.onload = function() {
-    const sections = document.querySelectorAll("section");
-    const navA = document.querySelectorAll(".nav-item a");
-  
-    function updateActiveSection() {
-      let maxVisibleArea = 10;
-      let activeSection = null;
-  
-      sections.forEach((section) => {
-        const visibleArea = getVisibleArea(section);
-  
-        if (visibleArea > maxVisibleArea) {
-          maxVisibleArea = visibleArea;
-          activeSection = section.getAttribute("id");
-        }
-      });
-  
-      navA.forEach((a) => {
-        a.classList.remove("active");
-        if (a.classList.contains(activeSection)) {
-          a.classList.add("active");
-        }
-      });
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".nav-item a");
+console.log(navLi);
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (scrollY >= sectionTop-150) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    console.log(li.classList);
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
     }
-  
-    function getVisibleArea(element) {
-      const rect = element.getBoundingClientRect();
-      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-      const windowWidth = window.innerWidth || document.documentElement.clientWidth;
-      const visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
-      const visibleWidth = Math.min(rect.right, windowWidth) - Math.max(rect.left, 0);
-      return visibleHeight * visibleWidth;
-    }
-  
-    window.addEventListener("scroll", updateActiveSection);
-    window.addEventListener("resize", updateActiveSection);
-  };
-  // Rest of the code
-  
+  });
+};
+

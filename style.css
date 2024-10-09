@@ -43,3 +43,16 @@ body{
     font-family: 'Roboto';
     font-size: 1.5rem;
 }
+
+.Socials{
+    list-style-type:None;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+}
+
+.Socials li{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
