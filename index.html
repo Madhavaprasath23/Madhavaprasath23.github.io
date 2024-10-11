@@ -17,7 +17,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse  justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <li class="nav-item">
             <a class="nav-link" href="https://github.com/Madhavaprasath23/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="" class="bi bi-github" viewBox="0 0 16 16">
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
@@ -52,13 +52,17 @@
             <div class="clearfix">
                 <img src="Assets/My Image.jpg"  style="height: 20%; width: 20%;"class="col-md-6 float-md-end mb-3 ms-md-3 rounded-circle">
                 
-                <p style="font-size: 2.5rem; font-weight: bolder;">
+                <h1 style="font-size: 2.5rem; font-weight: bolder;">
                     Hey all This is Madhava Prasath!
-                    </p>
+                </h1>
                     <p style="font-size: large; text-align: justify;">
                         I dont have much notoriety, I am a Btech final year student at R.M.D. Engineering College, Kavaraipettai TamilNadu. My interest are Deeplearning, applications of deeplearning such as in Medicine and Convex Optimization. I love Deeplearning and Maths behind it. In the section Research Interest I would have specified about my interest in much more convinent fashion. 
-                        I am now looking towards contributing to this feild by doing useful research and targetting good conferences and journals with that I can improve my profile and  also have a good knowledge about this feild,  In my leisure time I make games using Godot Game Engine unfortunately the git account I used to commit is lost because of 2FA so you can just see my previous games if you are interested. Also I have attached my CV below you can find about my previous Internships and certifications I have worked on.
+                        I am now looking towards contributing to this field by doing useful research and targetting good conferences and journals with that I can improve my profile and  also have a good knowledge about this field,  In my leisure time I make games using Godot Game Engine unfortunately the git account I used to commit is lost because of 2FA so you can just see my previous games if you are interested. Also I have attached my CV below you can find about my previous Internships and certifications I have worked on.
                     </p>
+                    <p style="font-size: large; text-align: justify;">
+                      Mentor: <a href="https://prajdabre.github.io/" target="_blank" rel="noopener noreferrer">Prof Raj Dabre</a> ( Researcher @ <a href="https://astrec.nict.go.jp/en/" target="_blank" rel="noopener noreferrer">NICT, Japan</a>, Adjunct Faculty @ <a href="https://ai4bharat.iitm.ac.in/" target="_blank" rel="noopener noreferrer"> IIT Madras (AI4Bharat)</a>, Honorary Visiting Assistant Professor @ <a href="https://www.cfilt.iitb.ac.in/" target="_blank" rel="noopener noreferrer">IIT Bombay (CFILT)</a>)
+                      I am extremely Gratefull for him and his guidance (and am also gratefull that he considers me as a human )
+                  </p>
                     <p style="font-size: large; text-align: justify;">
                         Hobbies: Listening to Music, Playing games, Walking till I ease my mind off 
                     </p>
@@ -74,8 +78,65 @@
 
                           <a href="Assets/Madhava_prasath_CV_09_10_2024.pdf" download="Madhavaprasath_CV.pdf" style="text-decoration: none; color: white;">Download CV</a>
                       </button>
-                    </a>
-            </div>
+                    <br>
+                      <div class="clear-fix">
+                        <p class="heading" style="padding-top: 1rem;">
+                          Papers That are my favorite (In no particular order)
+                        </p>
+                        <ul class="paper_list">
+                          <li>
+                            <b>Attention Is All You Need</b> - You know it I know it hands down transformed Deep Learning in all fields which are dominated in the era of traditional sequence models such as RNNs ,LSTM and ConvNets, indeed Attention is all we needed all though it is great it still suffers from quadratic time complexity when the model is used in inference and as well as training, To tackle this lot methods are proposed such as efficient attention (training), KV cacheing (inference), still its the greatest. 
+                            [
+                            <a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer">arXiv</a>
+                            ]
+
+                          </li>
+                          <br>
+                          <li>
+                            <b>Image is worth 16 x 16 words</b> - Another classic which is a direct application of the Encoder stack from transformers on Understanding task (aka BERT) but this paved the way for ViT, By tokenzing an image by using Non Overlapping Convoluiton layers and adding with learnable position encoding (similar to GPT2), This has significantly created a new wave of Vision Transformers (ViTs) such as DETER (Encoder decoder architecture) and Many more it is primarily pretrained on JFT-300M (internal dataset by google) thats how it shows more capable understanding.
+                            [
+                            <a href="https://arxiv.org/abs/2010.11929" target="_blank" rel="noopener noreferrer">arXiv</a>
+                            ]
+                          </li>
+                          <br>
+                          <li >
+                            <b>CLIP</b> - This paper shows that even for Understanding Single Modal tasks such as for classification, We could use Multimodal datas to further more enhance the understanding of the data thus increasing the performance on the Single modal tasks, just like how we learn about objects. Improvements from the loss function of CLIP leads us to SIGLIP
+                            [
+                            <a href="https://arxiv.org/abs/2103.00020" target="_blank" rel="noopener noreferrer">arXiv</a>
+                            ]
+                          </li>
+                          <br>
+                          <li>
+                            <b>Flamingo</b> - This paper shows Aliging the Vision encoder and text LLMs by using series of Gated Cross attention layer , The LLM is frozen and vision encoder (In the paper they have used conformer) effectively aligning vison and text modality although methodology like Llava exists (In which image representations are directly sent into decoder only transformer with the use of Vision Encoder(Linear on top of frozen ViT - v1, MLP on top of frozen ViT - v2)) it is a bit of personal favorite for me 
+                            [
+                            <a href="https://arxiv.org/abs/2204.14198" target="_blank" rel="noopener noreferrer">arXiv</a>
+                            ]
+                          </li>
+                          <br>
+                          <li>
+                            <b>VQ-VAE</b> - This paper converts the continous nature of latent space in VAE to discrete nature by using embedding layers, The each vector value is  mapped to closest embedding layer value (tokenizing it), In this paper they also use distance based restriction on latents. In my opinon VQ-VAE have paved the way for Latent based diffusion models for eg Video poet uses a Multimodal LLM which predicts the token of image or video just like in text. The tokens are encoded and decoded using MAG-VIT v2 which is a VQ-VAE
+                            [
+                            <a href="https://arxiv.org/abs/1711.00937" target="_blank" rel="noopener noreferrer">arXiv</a>
+                            ]
+                          </li>
+                          <br>
+                          <li>
+                            <b>Mamba</b> -  This paper shows the long term nature of SSMs and how it could be incredibly usefull, For me Mamba isn't a one day thing the foundation of Mamba models are laid from S4 SSMs , S4 highlighted that transformers perform worst on Long range tasks on one such task PATH - X transformers performed significantly worse than random guessing (less than 50%) S4 address the issue by initalizing the parameters of it from HiPPO Matrix (again from the same authors of Mamba) to make it long range depended, S4D initalizes the matrix Diagonally, S5 improves the discretiztion from S4 by incorpating ZOH (zero order hold) 
+                            , S6 (mamba) combines the gated networks (RNN and LSTM) and H3 (hungry hungry Hippos, the Hippo matrix I mentioned before) and ZOH from S5. further more improvements are done on parallelizing the parameter which led to 1SS-Matrix now the SSMs are equalent to Transformers
+                            [
+                            <a href="https://arxiv.org/abs/2312.00752" target="_blank" rel="noopener noreferrer">arXiv v1</a>,
+                            <a href="https://arxiv.org/abs/2405.21060" target="_blank" rel="noopener noreferrer">arXiv v2</a>
+                            ]
+                          
+                          </li>
+                          <br>
+                          <li>
+                            <b>Am not doing justice by just mentioning only these papers I will make a seperate page dedicated to this later</b>
+                          </li>
+                        </ul>
+
+                      </div>
+                    </div>
         </div>
         </section>
 
